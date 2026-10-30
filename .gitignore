@@ -1,0 +1,15 @@
+# Planilhas e exportações com dados pessoais não vão para o repositório
+*.xlsx
+*.xls
+*.csv
+web/data/
+
+# Android (se for adicionado no futuro)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.jks
+
+.idea/
+.DS_Store
