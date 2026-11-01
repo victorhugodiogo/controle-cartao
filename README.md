@@ -34,9 +34,9 @@ web/                      site publicado no GitHub Pages
 ├── manifest.webmanifest  instalação como app (PWA)
 ├── sw.js                 modo offline
 └── icons/
-.github/workflows/site.yml  publica web/ a cada alteração na branch main
+.github/workflows/site.yml  copia web/ para a branch gh-pages a cada alteração na main
 ```
 
 ## Publicação
 
-Qualquer alteração em `web/` na branch `main` publica o site sozinha pela aba **Actions** (*Publicar site (GitHub Pages)*). Na primeira vez é preciso ligar o Pages em **Settings → Pages → Source: GitHub Actions**.
+Qualquer alteração em `web/` na branch `main` é copiada sozinha para a branch `gh-pages` pela aba **Actions** (*Publicar site (GitHub Pages)*), e o GitHub Pages publica essa branch. Na primeira vez é preciso ligar o Pages em **Settings → Pages → Source: Deploy from a branch → Branch: `gh-pages` / `(root)` → Save**.
